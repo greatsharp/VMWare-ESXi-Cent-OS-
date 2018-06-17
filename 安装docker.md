@@ -2,11 +2,11 @@
 
 1. 系统版本  
 
-# uname -a  
+#uname -a  
 
 Linux localhost.localdomain 2.6.32-642.el6.x86_64 #1 SMP Tue May 10 17:27:01 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 
-# cat /etc/redhat-release   
+#cat /etc/redhat-release   
 
 CentOS release 6.8 (Final)  
 
@@ -22,15 +22,15 @@ yum install -y docker-io
 
 4. 开机自启动与启动Docker  
 
-# service docker start  
+#service docker start  
 
 Starting cgconfig service:                                 [  OK  ]  
 
 Starting docker:                                       [  OK  ]  
 
-# chkconfig docker on  
+#chkconfig docker on  
 
-# chkconfig docker --list  
+#chkconfig docker --list  
 
 docker          0:off   1:off   2:on    3:on    4:on    5:on    6:off  
 
