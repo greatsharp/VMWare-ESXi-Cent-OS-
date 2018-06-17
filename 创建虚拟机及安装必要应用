@@ -1,0 +1,5 @@
+1. 选择虚拟机类型及版本
+![image](https://github.com/greatsharp/VMWare-ESXi-Cent-OS-/blob/master/images/%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E6%9C%BA.png)
+
+2. 设置虚拟机引导以便安装CentOS，系统安装成功后，可以断开CDROM的引导连接
+![image](https://github.com/greatsharp/VMWare-ESXi-Cent-OS-/blob/master/images/%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%AE%BE%E7%BD%AE.png)
