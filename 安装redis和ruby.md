@@ -9,9 +9,8 @@
 #ruby --version  
 #gem install redis
 
-
-3. redis集群配置常见https://blog.csdn.net/jek123456/article/details/72518002
-
-4. 关闭centos 7的防火墙  
+3. 关闭centos 7的防火墙  
 #systemctl stop firewalld.service  
 #systemctl disable firewalld.service 
+
+4. redis集群配置常见https://blog.csdn.net/jek123456/article/details/72518002
