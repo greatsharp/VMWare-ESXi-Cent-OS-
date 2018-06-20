@@ -14,3 +14,6 @@
 #systemctl disable firewalld.service 
 
 4. redis集群配置参见https://blog.csdn.net/jek123456/article/details/72518002
+
+5. redis集群配置成功  
+![image](https://github.com/greatsharp/VMWare-ESXi-Cent-OS-/blob/master/redis%E9%9B%86%E7%BE%A4%E9%85%8D%E7%BD%AE%E6%88%90%E5%8A%9F.png)
