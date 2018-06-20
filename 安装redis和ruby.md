@@ -13,4 +13,4 @@
 #systemctl stop firewalld.service  
 #systemctl disable firewalld.service 
 
-4. redis集群配置常见https://blog.csdn.net/jek123456/article/details/72518002
+4. redis集群配置参见https://blog.csdn.net/jek123456/article/details/72518002
