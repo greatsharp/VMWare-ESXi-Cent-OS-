@@ -1,4 +1,4 @@
-1. 连接Redis集群的配置  
+# 连接Redis集群的配置  
 #REDIS (RedisProperties)  
 #Redis数据库索引（默认为0）  
 spring.redis.database=0  
@@ -17,7 +17,7 @@ spring.redis.timeout=0
 
 
 
-如果是连接redis单级，更换如下配置  
+# 如果是连接redis单级，更换如下配置  
 #Redis服务器地址  
 spring.redis.host=172.18.195.14  
 #Redis服务器连接端口  
