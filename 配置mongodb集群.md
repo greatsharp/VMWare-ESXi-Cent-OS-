@@ -19,7 +19,7 @@
 > \>rs.isMaster()
 
 # 3.创建Route
-># nohup ./bin/mongos --port 40000 --configdb conf/172.18.195.10:27100,172.18.195.14:27100,172.18.195.16:27100 --fork --logpath=/opt/mongodb/data/log/route.log --logappend &  
+>#nohup ./bin/mongos --port 40000 --configdb conf/172.18.195.10:27100,172.18.195.14:27100,172.18.195.16:27100 --fork --logpath=/opt/mongodb/data/log/route.log --logappend &  
 
 
 # 4.设置分片  
