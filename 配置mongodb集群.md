@@ -19,7 +19,7 @@
 > \>rs.isMaster()
 
 # 3.创建Route
->#./bin/mongos --port 40000 --configdb conf/172.18.195.10:27100,172.18.195.14:27101,172.18.195.16:27102 --fork --logpath=/opt/mongodb/data/log/route.log --logappend --bind_ip 172.18.195.14 &  
+>#./bin/mongos --port 40000 --configdb conf/172.18.195.10:27100,172.18.195.14:27101,172.18.195.16:27102 --logpath=/opt/mongodb/data/log/route.log --logappend --bind_ip_all &  
 
 # 4.设置分片  
 >#./bin/mongo localhost:40000  
