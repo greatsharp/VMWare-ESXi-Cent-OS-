@@ -3,5 +3,5 @@
 >#./bin/mongod --port 27018 --dbpath=/opt/mongodb/data/db1 --logpath=/opt/mongodb/data/log/rs0-2.log --logappend --fork --shardsvr --replSet=rs0 --noauth --bind_ip_all  
 >#./bin/mongo 172.18.195.14:27017  
 > \>rs.initiate({_id: 'rs0', members: [{_id: 0, host: '172.18.195.14:27017'}, {_id: 1, host: '172.18.195.14:27018'}]})  
-> \>rs.isMaster()
-
+> \>rs.isMaster()  
+![image](https://github.com/greatsharp/VMWare-ESXi-Cent-OS-/blob/master/images/mongodb%E5%88%9B%E5%BB%BA%E5%A4%8D%E5%88%B6%E9%9B%86.png)
