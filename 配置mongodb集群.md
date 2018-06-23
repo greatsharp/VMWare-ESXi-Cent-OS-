@@ -19,10 +19,13 @@
 > \>rs.isMaster()
 
 # 3.创建Route
->#./bin/mongos --port 40000 --configdb conf/172.18.195.10:27100,172.18.195.14:27101,172.18.195.16:27102 --logpath=/opt/mongodb/data/log/route.log --logappend --bind_ip_all &  
+># nohup ./bin/mongos --port 40000 --configdb conf/172.18.195.10:27100,172.18.195.14:27100,172.18.195.16:27100 --fork --logpath=/opt/mongodb/data/log/route.log --logappend &  
+
 
 # 4.设置分片  
 >#./bin/mongo localhost:40000  
 > \>db.runCommand({ addshard: 'rs0/172.18.195.14:27017,172.18.195.14:27018'})
 > \>db.runCommand({ addshard: 'rs1/172.18.195.10:27017,172.18.195.10:27018'})
-> \>db.runCommand({ addshard: 'rs2/172.18.195.16:27017,172.18.195.16:27018'})
+> \>db.runCommand({ addshard: 'rs2/172.18.195.16:27017,172.18.195.16:27018'})  
+> \>db.runCommand({ enablesharding: 'test'})  
+> \>db.runCommand({ shardcollection: 'test.user', key: {name:1}})
