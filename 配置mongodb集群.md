@@ -24,6 +24,7 @@
 
 # 4.设置分片  
 >#./bin/mongo localhost:40000  
+> \>use admin  
 > \>db.runCommand({ addshard: 'rs0/172.18.195.14:27017,172.18.195.14:27018'})  
 > \>db.runCommand({ addshard: 'rs1/172.18.195.10:27017,172.18.195.10:27018'})  
 > \>db.runCommand({ addshard: 'rs2/172.18.195.16:27017,172.18.195.16:27018'})  
