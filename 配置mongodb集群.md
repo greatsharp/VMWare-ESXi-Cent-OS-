@@ -11,3 +11,7 @@
 >#./bin/mongo 172.18.195.10:27100  
 > \>rs.initiate({_id: 'conf', members: [{_id: 0, host: '172.18.195.10:27100'}, {_id: 1, host: '172.18.195.14:27100'}, {_id: 2, host: '172.18.195.16:27100'}]})  
 > \>rs.isMaster()
+
+# 3.创建Route
+>#nohup ./bin/mongos --port 40000 --configdb conf/172.18.195.10:27100,172.18.195.14:27101,172.18.195.16:27102 --fork --logpath=/opt/mongodb/data/log/route.log --logappend &  
+
