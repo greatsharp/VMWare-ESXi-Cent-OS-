@@ -17,7 +17,7 @@ spring.redis.timeout=0
 
 
 
-# 如果是连接redis单级，更换如下配置  
+# 如果是连接redis单机，更换如下配置  
 #Redis服务器地址  
 spring.redis.host=172.18.195.14  
 #Redis服务器连接端口  
