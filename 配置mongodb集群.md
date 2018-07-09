@@ -15,6 +15,8 @@ shard1:27001
 shard2:27002  
 shard3:27003  
 
+最终集群进程列表  
+![](https://github.com/greatsharp/VMWare-ESXi-Cent-OS-/blob/master/images/mongodb%E9%9B%86%E7%BE%A4%E8%BF%9B%E7%A8%8B%E5%88%97%E8%A1%A8.png)
 
 # 2.config server复制集配置
 
@@ -93,3 +95,11 @@ sh.addShard("shard3/172.18.195.10:27003,172.18.195.14:27003,172.18.195.16:27003"
 #查看集群状态  
 sh.status()或db.runCommand({listshards:1})  
 ![](https://github.com/greatsharp/VMWare-ESXi-Cent-OS-/blob/master/images/mongodb%E6%9F%A5%E7%9C%8Bshards%E7%8A%B6%E6%80%81.png)
+
+# 6.设置需要分片的数据库和集合
+db.runCommand({enablesharding:'test'})  
+db.runCommand({shardcollection:'test.table1', key:{id:'hashed'}})  
+
+分片策略有两种  
+![](https://github.com/greatsharp/VMWare-ESXi-Cent-OS-/blob/master/images/mongodb%E5%88%86%E7%89%87%E7%AD%96%E7%95%A51.png)  
+![](https://github.com/greatsharp/VMWare-ESXi-Cent-OS-/blob/master/images/mongodb%E5%93%88%E5%B8%8C%E5%88%86%E7%89%87.png)
