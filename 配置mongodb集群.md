@@ -1,3 +1,12 @@
+# 1.服务器规划  
+服务器10              |	服务器14              | 服务器16
+mongos               |	mongos                |	mongos
+config server	       | config server          |	config server
+shard server1 主节点  |	shard server1 副节点	 | shard server1 仲裁
+shard server2 仲裁    | shard server2 主节点	  | shard server2 副节点
+shard server3 副节点  |	shard server3 仲裁    | shard server3 主节点
+
+
 # 1.分别在三台server上创建sharding复制集 rs0, rs1, rs2 
 172.18.195.14上创建rs0
 >#./bin/mongod --port 27017 --dbpath=/opt/mongodb/data/db --logpath=/opt/mongodb/data/log/rs0-1.log --logappend --fork --shardsvr --replSet=rs0 --noauth --bind_ip_all  
