@@ -55,3 +55,22 @@ replSet=shard1
 shardsvr = true  
 
 maxConns=20000
+
+
+# 4.mongos路由服务器配置
+pidfilepath = /usr/local/mongodb/mongos/log/mongos.pid  
+logpath = /usr/local/mongodb/mongos/log/mongos.log  
+logappend = true  
+
+
+bind_ip = 0.0.0.0  
+port = 20000  
+fork = true  
+
+
+#监听的配置服务器,只能有1个或者3个 configs为配置服务器的副本集名字  
+configdb = configs/192.168.0.75:21000,192.168.0.84:21000,192.168.0.86:21000  
+
+ 
+#设置最大连接数  
+maxConns=20000
