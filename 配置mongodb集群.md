@@ -1,4 +1,6 @@
 # 1.服务器规划  
+![](https://github.com/greatsharp/VMWare-ESXi-Cent-OS-/blob/master/images/mongodb%E9%9B%86%E7%BE%A4.png)
+
 服务器172.18.195.10   |	服务器172.18.195.14   | 服务器172.18.195.16  
 mongos               |	mongos                |	mongos  
 config server	       | config server          |	config server  
@@ -89,4 +91,5 @@ sh.addShard("shard2/172.18.195.10:27002,172.18.195.14:27002,172.18.195.16:27002"
 sh.addShard("shard3/172.18.195.10:27003,172.18.195.14:27003,172.18.195.16:27003")  
 
 #查看集群状态  
-sh.status()
+sh.status()或db.runCommand({listshards:1})  
+![](https://github.com/greatsharp/VMWare-ESXi-Cent-OS-/blob/master/images/mongodb%E6%9F%A5%E7%9C%8Bshards%E7%8A%B6%E6%80%81.png)
