@@ -1,10 +1,10 @@
 # 1.服务器规划  
-服务器10              |	服务器14              | 服务器16
-mongos               |	mongos                |	mongos
-config server	       | config server          |	config server
-shard server1 主节点  |	shard server1 副节点	 | shard server1 仲裁
-shard server2 仲裁    | shard server2 主节点	  | shard server2 副节点
-shard server3 副节点  |	shard server3 仲裁    | shard server3 主节点
+服务器10              |	服务器14              | 服务器16\<br>
+mongos               |	mongos                |	mongos \<br>
+config server	       | config server          |	config server \<br>
+shard server1 主节点  |	shard server1 副节点	 | shard server1 仲裁 \<br>
+shard server2 仲裁    | shard server2 主节点	  | shard server2 副节点 \<br>
+shard server3 副节点  |	shard server3 仲裁    | shard server3 主节点 \<br>
 
 
 # 1.分别在三台server上创建sharding复制集 rs0, rs1, rs2 
