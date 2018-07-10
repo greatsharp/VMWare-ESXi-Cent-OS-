@@ -106,6 +106,6 @@ db.runCommand({shardcollection:'test.table1', key:{id:'hashed'}})
 ![](https://github.com/greatsharp/VMWare-ESXi-Cent-OS-/blob/master/images/mongodb%E5%93%88%E5%B8%8C%E5%88%86%E7%89%87.png)
 
 # 7.Spring Boot连接MongoDB集群
-spring.data.mongodb.uri=mongodb://172.18.195.14:20000/test  
+spring.data.mongodb.uri=mongodb://172.18.195.14:20000,172.18.195.10:20000,172.18.195.16:20000/test  
 spring.data.mongodb.option.min-connection-per-host=20  
 spring.data.mongodb.option.max-connection-per-host=200
