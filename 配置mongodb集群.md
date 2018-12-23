@@ -15,7 +15,7 @@ shard1:27001
 shard2:27002  
 shard3:27003  
 
-最终集群进程列表  
+最终集群进程列表,每台服务器上均相同的运行以下服务  
 ![](https://github.com/greatsharp/VMWare-ESXi-Cent-OS-/blob/master/images/mongodb%E9%9B%86%E7%BE%A4%E8%BF%9B%E7%A8%8B%E5%88%97%E8%A1%A8.png)
 
 # 2.config server复制集配置
@@ -39,6 +39,10 @@ replSet=configs
 maxConns=20000
 
 
+配置副本集configs  
+rs.initiate({_id: 'configs', members: [{_id: 0, host: '172.18.195.5:21000'}, {_id: 1, host: '172.18.195.14:21000'}, {_id: 2, host: '172.18.195.16:21000'}]})  
+rs.isMaster()
+
 # 3.shard1,shard2,shard3分片复制集配置
 
 pidfilepath = /usr/local/mongodb/shard1/log/shard1.pid  
@@ -60,6 +64,9 @@ shardsvr = true
 
 maxConns=20000
 
+配置副本集shard1,shard2,shard3  
+rs.initiate({_id: 'shard1', members: [{_id: 0, host: '172.18.195.5:27001'}, {_id: 1, host: '172.18.195.14:27001'}, {_id: 2, host: '172.18.195.16:27001'}]})  
+rs.isMaster()  
 
 # 4.mongos路由服务器配置
 pidfilepath = /usr/local/mongodb/mongos/log/mongos.pid  
