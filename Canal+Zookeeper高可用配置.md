@@ -5,3 +5,6 @@ https://www.cnblogs.com/heguoxiu/p/10036210.html
 
 
 官网介绍：https://github.com/alibaba/canal/wiki/canal%E4%BB%8B%E7%BB%8D
+
+
+https://www.iteye.com/blog/shift-alt-ctrl-2399603
